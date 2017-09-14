@@ -6,8 +6,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-html {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);    
+html {    
     font-size: 100px;
     height: 100%;
 }
@@ -23,6 +22,7 @@ ul, li {
 }
 
 img {
+    -webkit-touch-callout: none; //禁止拷贝
     border: 0;
     vertical-align: middle;
 }
@@ -35,7 +35,15 @@ input, textarea {
     border: 0;
     vertical-align: middle;
     outline: none;
-    padding: 10px;
+    -webkit-appearance: none;
+}
+
+a, button, input, textarea {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.user-select-none {
+  -webkit-user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -51,7 +59,7 @@ input, textarea {
 /* iphone4 */
 @media (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) {
     html {
-        font-size: 96px !important
+        font-size: 96px !important;
     }
 }
 
@@ -59,7 +67,7 @@ input, textarea {
 /* iphone5 */
 @media (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) {
     html {
-        font-size: 96px !important
+        font-size: 96px !important;
     }
 }
 
@@ -67,7 +75,7 @@ input, textarea {
 /* iphone 6,7 */
 @media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
     html {
-        font-size: 100px !important
+        font-size: 100px !important;
     }
 }
 
@@ -75,7 +83,7 @@ input, textarea {
 /* iphone 6,7 plus*/
 @media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
     html {
-        font-size: 110px !important
+        font-size: 110px !important;
     }
 }
 
@@ -83,6 +91,6 @@ input, textarea {
 /* 特殊安卓*/
 @media (min-device-height: 737px) and (-webkit-device-pixel-ratio: 3) {
     html {
-        font-size: 110px !important
+        font-size: 110px !important;
     }
 }

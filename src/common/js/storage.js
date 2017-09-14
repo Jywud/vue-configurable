@@ -1,9 +1,14 @@
 /*存储相关*/
-import _ from 'underscore'
+// import _ from 'underscore'
+var num = 0
 
-;(function(win) {
-	win.hsStorage = {
-		
-	};
-	
-})(window);
+var hsStorage = {
+	setNum() {
+		num++;
+	},
+	getNum() {
+		return num;
+	}
+}
+
+export default hsStorage

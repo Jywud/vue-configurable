@@ -5,22 +5,22 @@
 </style>
 <template>
 	<div id="home">		
-		<router-view></router-view>
+		<router-view></router-view>		
 		<buttom-bar></buttom-bar>
 	</div>
 </template>
 <script>	
-	import compConfig from 'src/componentsConfig'
-	let ButtomBar = compConfig[current_client]['ButtomBar'];
+	import componentCfg from 'src/componentsConfig'
+	var ButtomBar = componentCfg[current_client]['ButtomBar'];	
 	export default {
 		name: 'home',
 		data() {
 			return {
-				
+				num: 0
 			}
 		},
-		mounted() {
-
+		mounted() {			
+			
 		},
 		methods: {
 			

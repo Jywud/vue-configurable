@@ -7,17 +7,14 @@ import store from './vuex'
 /*初始化vux插件*/
 import './common/js/vuxInit'
 
+/*全局过滤器*/
 import './common/js/filter'
+/*全局指令*/
 import './common/js/directive'
 
 /*导入第三方库*/
 import $ from 'n-zepto'
 import './common/js/iconfont'
-
-import './common/js/const'
-import './common/js/utils'
-import './common/js/storage'
-import './common/js/business'
 
 /*网络请求*/
 import api from './common/js/api'
